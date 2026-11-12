@@ -5,10 +5,6 @@
 
 ---
 
-## 🎨 Couleurs & Ambiance
-- **Bleu clair (`#38bdf8`)**, **Rose limite violet (`#ec4899` / `#8b5cf6`)** et **Jaune chaud (`#fbbf24`)**.
-- Ambiance estivale, chaleureuse et festive sur fond sombre moderne.
-
 ## 🥤 Caractéristiques du Produit
 - **Nom :** SafeCup
 - **Taille :** 50 cl (taille standard classique des gobelets de festival / écocups)
@@ -21,6 +17,3 @@
 - `style.css` : Styles épurés et dégradés estivaux.
 - `script.js` : Test interactif du verrouillage et sélecteur de quantité.
 - `server.js` : Serveur léger optionnel.
-
-## 🚀 Comment l'ouvrir
-Double-cliquez directement sur **`index.html`** dans n'importe quel navigateur (Chrome, Edge, Firefox, Safari).
