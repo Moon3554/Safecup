@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeCup | Le gobelet verrouillable anti-intrusion</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            summer: {
+              cyan: '#38bdf8',
+              pink: '#ec4899',
+              purple: '#8b5cf6',
+              yellow: '#fbbf24',
+              night: '#0b0f19',
+              card: '#131b2e'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0b0f19] text-slate-100 antialiased selection:bg-pink-500 selection:text-white">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-50 bg-[#0b0f19]/85 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-4 flex items-center justify-between">
+      
+      <!-- Logo SafeCup -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-cyan-400 p-0.5 shadow-md">
+          <div class="w-full h-full bg-[#0b0f19] rounded-[10px] flex items-center justify-center">
+            <svg class="w-5 h-5 text-yellow-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <span class="text-2xl font-black font-heading tracking-tight bg-gradient-to-r from-yellow-300 via-pink-400 to-cyan-300 bg-clip-text text-transparent">
+            SafeCup
+          </span>
+        </div>
+      </a>
+
+      <!-- Simple Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#presentation" class="hover:text-yellow-300 transition-colors">Le gobelet</a>
+        <a href="#fonctionnement" class="hover:text-pink-400 transition-colors">Comment ça marche</a>
+        <a href="#acheter" class="hover:text-cyan-300 transition-colors">Commander</a>
+      </nav>
+
+      <!-- CTA Nav -->
+      <a href="#acheter" class="px-5 py-2 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 hover:brightness-110 transition-all shadow-md">
+        Commander (3,50 €)
+      </a>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="presentation" class="relative pt-12 pb-20 overflow-hidden">
+    <!-- Summer background ambient glows (yellow, pink/purple, light blue) -->
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-r from-yellow-400/20 via-pink-500/20 to-cyan-400/20 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        
+        <!-- Hero Text -->
+        <div class="md:col-span-7 space-y-5 text-center md:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 text-xs font-semibold">
+            ☀️ Vibe été & Fêtes en toute sérénité
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl font-black font-heading tracking-tight leading-tight">
+            Fais la fête tranquille, <br>
+            <span class="text-gradient-summer">ton verre est verrouillé.</span>
+          </h1>
+
+          <p class="text-base text-slate-300 leading-relaxed max-w-xl">
+            <strong>SafeCup</strong> est un gobelet réutilisable équipé d'un couvercle qui se verrouille facilement. Il empêche que des personnes malintentionnées glissent des substances bizarres dans ton verre en soirée ou en festival.
+          </p>
+
+          <!-- 3 Points clés simples -->
+          <div class="space-y-2.5 pt-1 text-sm text-slate-200">
+            <div class="flex items-center gap-2.5 justify-center md:justify-start">
+              <span class="text-yellow-400 font-bold">✓</span>
+              <span><strong>Couvercle verrouillable :</strong> impossible à ouvrir discrètement</span>
+            </div>
+            <div class="flex items-center gap-2.5 justify-center md:justify-start">
+              <span class="text-pink-400 font-bold">✓</span>
+              <span><strong>Taille standard (50 cl) :</strong> le format classique des gobelets de fête</span>
+            </div>
+            <div class="flex items-center gap-2.5 justify-center md:justify-start">
+              <span class="text-cyan-300 font-bold">✓</span>
+              <span><strong>Prix accessible :</strong> seulement <strong>3,50 €</strong> le gobelet</span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row items-center gap-3 pt-3 justify-center md:justify-start">
+            <a href="#acheter" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold text-slate-950 bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 hover:brightness-110 transition-all text-center shadow-lg">
+              Acheter SafeCup — 3,50 €
+            </a>
+            <button id="heroToggleLockBtn" class="w-full sm:w-auto px-5 py-3.5 rounded-xl font-semibold text-slate-200 bg-white/5 border border-white/10 hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-2">
+              <span id="heroLockIcon">🔒</span>
+              <span id="heroLockBtnText">Tester le verrouillage</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual (The Cup) -->
+        <div class="md:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl flex flex-col items-center">
+            
+            <!-- Lock status badge -->
+            <div id="cupStatusBadge" class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider status-badge-locked mb-4">
+              <span id="cupStatusDot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span id="cupStatusLabel">Couvercle Verrouillé</span>
+            </div>
+
+            <!-- Cup SVG Graphic -->
+            <div id="cupGraphicWrap" class="w-52 py-2 drop-shadow-xl transition-transform duration-300">
+              <svg viewBox="0 0 240 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                <defs>
+                  <!-- Summer Gradient Cup Body (Cyan, Pink/Violet, Warm Yellow) -->
+                  <linearGradient id="safeCupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#38bdf8" />
+                    <stop offset="55%" stop-color="#d946ef" />
+                    <stop offset="100%" stop-color="#fbbf24" />
+                  </linearGradient>
+
+                  <!-- Gloss reflection -->
+                  <linearGradient id="safeCupShine" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+                    <stop offset="25%" stop-color="#ffffff" stop-opacity="0.05" />
+                    <stop offset="80%" stop-color="#000000" stop-opacity="0.1" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Paille standard -->
+                <rect x="114" y="10" width="12" height="45" rx="6" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+
+                <!-- COUVERCLE VERROUILLABLE -->
+                <path d="M50 65 C50 50 190 50 190 65 L182 82 L58 82 Z" fill="#1e293b" stroke="#475569" stroke-width="2" />
+                
+                <!-- Bague de verrouillage SafeLock -->
+                <rect x="48" y="82" width="144" height="20" rx="6" fill="#334155" stroke="#64748b" stroke-width="1.5" />
+                
+                <!-- Latch indicateur de verrouillage -->
+                <rect id="svgLatch" x="105" y="86" width="30" height="12" rx="3" fill="#10b981" />
+                <circle cx="120" cy="92" r="2.5" fill="#ffffff" />
+
+                <!-- CORPS DU GOBELET STANDARD 50 CL -->
+                <path d="M56 102 L70 340 C71 350 82 358 94 358 L146 358 C158 358 169 350 170 340 L184 102 Z" fill="url(#safeCupGrad)" />
+                <path d="M56 102 L70 340 C71 350 82 358 94 358 L146 358 C158 358 169 350 170 340 L184 102 Z" fill="url(#safeCupShine)" />
+
+                <!-- SafeCup Logo & Capacité -->
+                <g transform="translate(120, 215)">
+                  <circle cx="0" cy="0" r="26" fill="#0b0f19" fill-opacity="0.35" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5" />
+                  <path d="M-6 3v2m-5 3h22a2 2 0 002-2v-5a2 2 0 00-2-2h-22a2 2 0 00-2 2v5a2 2 0 002 2zm14-7V0a3 3 0 00-6 0v2h6z" fill="#ffffff" />
+                  <text x="0" y="44" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="900" font-size="15" text-anchor="middle" letter-spacing="2">SAFECUP</text>
+                  <text x="0" y="58" fill="#fef08a" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" text-anchor="middle">50 CL • STANDARD</text>
+                </g>
+
+                <!-- Base -->
+                <path d="M72 342 C74 353 84 360 94 360 L146 360 C156 360 166 353 168 342 Z" fill="#0f172a" />
+              </svg>
+            </div>
+
+            <p class="text-xs text-slate-400 mt-2">
+              Format standard 50 cl • Finition estivale
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION : COMMENT ÇA MARCHE ================= -->
+  <section id="fonctionnement" class="py-16 bg-[#0e1424] border-y border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-black font-heading text-white">
+          Comment fonctionne <span class="text-gradient-summer">SafeCup</span> ?
+        </h2>
+        <p class="text-sm text-slate-300 mt-2">
+          3 étapes simples pour boire et faire la fête sans stress.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-yellow-400/20 text-yellow-300 flex items-center justify-center text-xl font-bold mx-auto">
+            1
+          </div>
+          <h3 class="text-base font-bold text-white">Remplis ton verre</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Fais servir ta boisson au bar ou prépare ton verre comme d'habitude.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl font-bold mx-auto">
+            2
+          </div>
+          <h3 class="text-base font-bold text-white">Verrouille le couvercle</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Place le couvercle et tourne-le d'un quart de tour pour le bloquer solidement.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-cyan-400/20 text-cyan-300 flex items-center justify-center text-xl font-bold mx-auto">
+            3
+          </div>
+          <h3 class="text-base font-bold text-white">Profite de ta soirée</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Danse et amuse-toi. Personne ne peut verser quoi que ce soit dans ton verre.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION : POURQUOI CHOISIR SAFECUP ================= -->
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <h2 class="text-2xl sm:text-3xl font-black font-heading text-white">
+          Simple, efficace et pas cher
+        </h2>
+        <p class="text-sm text-slate-300 mt-2">
+          Tout ce dont tu as besoin pour un gobelet de soirée utile.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+        <div class="p-5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-4">
+          <span class="text-2xl">🔒</span>
+          <div>
+            <h3 class="text-sm font-bold text-white">Sécurité anti-intrusion</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              Empêche les gens d'introduire des poudres, comprimés ou liquides suspects à ton insu.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-4">
+          <span class="text-2xl">🚫</span>
+          <div>
+            <h3 class="text-sm font-bold text-white">Anti-renversement</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              Évite de renverser ton verre sur tes potes ou sur toi en sautant dans la foule.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-4">
+          <span class="text-2xl">♻️</span>
+          <div>
+            <h3 class="text-sm font-bold text-white">Réutilisable & Lavable</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              En plastique rigide solide sans BPA, lavable facilement pour être réutilisé à chaque soirée.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-4">
+          <span class="text-2xl">💶</span>
+          <div>
+            <h3 class="text-sm font-bold text-white">Prix étudiant (moins de 5€)</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              Seulement 3,50 € le gobelet, pour que tout le monde puisse se protéger sans se ruiner.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION : ACHETER / COMMANDER ================= -->
+  <section id="acheter" class="py-16 bg-[#0e1424] border-t border-white/10">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-black font-heading text-white">
+          Commander ton <span class="text-gradient-summer">SafeCup</span>
+        </h2>
+        <p class="text-sm text-slate-300 mt-1">
+          Le gobelet indispensable pour tes prochaines soirées.
+        </p>
+      </div>
+
+      <!-- Single Simple Product Card -->
+      <div class="p-6 sm:p-8 rounded-3xl bg-white/5 border border-white/15 backdrop-blur-xl space-y-6">
+        
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-white/10">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-cyan-400 via-pink-500 to-yellow-400 flex items-center justify-center text-2xl shadow-md">
+              🥤
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white">Gobelet SafeCup 50 cl</h3>
+              <p class="text-xs text-slate-400">Taille standard • Couvercle verrouillable inclus</p>
+            </div>
+          </div>
+          <div class="text-right">
+            <span class="text-3xl font-black text-yellow-300">3,50 €</span>
+            <span class="block text-[11px] text-emerald-400 font-semibold">Moins de 5 €</span>
+          </div>
+        </div>
+
+        <!-- Quantity selector -->
+        <div class="flex items-center justify-between py-2">
+          <span class="text-sm font-medium text-slate-200">Quantité :</span>
+          <div class="flex items-center gap-3">
+            <button id="qtyMinus" type="button" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold flex items-center justify-center">-</button>
+            <span id="qtyDisplay" class="font-bold text-base text-white w-6 text-center">1</span>
+            <button id="qtyPlus" type="button" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold flex items-center justify-center">+</button>
+          </div>
+        </div>
+
+        <!-- Total Price -->
+        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+          <span class="text-sm font-bold text-slate-300">Total :</span>
+          <span id="totalPriceDisplay" class="text-2xl font-black text-white">3,50 €</span>
+        </div>
+
+        <!-- Simple Order Button -->
+        <button id="orderBtn" class="w-full py-4 rounded-xl font-bold text-slate-950 bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 hover:brightness-110 active:scale-95 transition-all text-sm shadow-xl flex items-center justify-center gap-2">
+          <span>🛒</span>
+          Commander mon gobelet
+        </button>
+
+        <!-- Success Message on click -->
+        <div id="orderSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-center space-y-1">
+          <p class="text-sm font-bold text-emerald-300">✅ Commande enregistrée !</p>
+          <p class="text-xs text-slate-300">Merci d'avoir commandé SafeCup pour vos soirées.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-8 bg-[#070a12] text-slate-400 text-xs text-center border-t border-white/5">
+    <div class="max-w-4xl mx-auto px-4 space-y-2">
+      <p class="font-bold text-white text-sm">SafeCup™</p>
+      <p>Projet scolaire — Site vitrine pour gobelet festif verrouillable anti-intrusion.</p>
+      <p class="text-slate-500 text-[11px]">© 2026 SafeCup. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "kapsy-site-vitrine",
+  "version": "1.0.0",
+  "description": "Site vitrine pour le gobelet verrouillable anti-intrusion KAPSY - Vibe été, festival et sécurité festive",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "gobelet",
+    "anti-spiking",
+    "anti-ghb",
+    "festival",
+    "sécurité",
+    "été",
+    "site-vitrine"
+  ],
+  "author": "Équipe Projet KAPSY",
+  "license": "MIT"
+}
